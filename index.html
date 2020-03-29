@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <title>Smart Bin Setter</title>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/css.css" />
+  <script src="./script/script.js"></script>
+</head>
+
+<body>
+  <div class="nav_top">
+    <h1>Smart Bin Setter</h1>
+  </div>
+  <p></p>
+  <div align="center">
+    <input type="text" class="input" id="getInput" placeholder="Enter Type" />
+    <p></p>
+    <button onclick="update()" class="update">Update</button>
+    <h3>Metal</h3>
+
+    <p class="count">
+      <span>
+        <button class="minus" id="metal_minus">-</button>
+        <span id="metal_count"></span>
+        <button class="plus" id="metal_plus">+</button>
+      </span>
+    </p>
+
+    <h3>Paper</h3>
+    <p class="count">
+      <span>
+        <button class="minus" id="paper_minus">-</button>
+        <span id="paper_count"></span>
+        <button class="plus" id="paper_plus">+</button>
+      </span>
+    </p>
+
+    <h3>Plastic</h3>
+    <p class="count">
+      <span>
+        <button class="minus" id="plastic_minus">-</button>
+        <span id="plastic_count"></span>
+        <button class="plus" id="plastic_plus">+</button>
+      </span>
+    </p>
+
+    <h3>Glass</h3>
+    <p class="count">
+      <span>
+        <button class="minus" id="glass_minus">-</button>
+        <span id="glass_count"></span>
+        <button class="plus" id="glass_plus">+</button>
+      </span>
+    </p>
+  </div>
+</body>
